@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; manifest-src 'self'; connect-src https://script.google.com https://script.googleusercontent.com https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#125462">
+<title>Sam Activate</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="icon-192.png" alt="">
+  <h1>تفعيل برامج Sam</h1>
+  <button id="btnLock" class="small" hidden>قفل</button>
+</header>
+<main id="app"></main>
+<div id="dialog" class="overlay" hidden>
+  <div class="card sheet">
+    <h2 id="dlgTitle"></h2>
+    <div id="dlgBody"></div>
+    <div class="row">
+      <button id="dlgYes" class="gold"></button>
+      <button id="dlgNo" class="salmon">إلغاء</button>
+    </div>
+  </div>
+</div>
+<script src="crypto.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
